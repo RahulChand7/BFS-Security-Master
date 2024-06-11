@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="BFS Security Master">ad101d501b9dca5087c3db15cc4bcbe0</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Refinitiv PermID Data</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_niit3_bfs_secu_0_refinitiv_permid_data</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_niit3_bfs_secu_0.refinitiv_permid_data_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>shubham.ayush@coforge.com</sys_created_by>
+        <sys_created_on>2024-04-25 10:07:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dd66791d1bb94e1087c3db15cc4bcbee</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>Refinitiv PermID Data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_app_module_dd66791d1bb94e1087c3db15cc4bcbee</sys_update_name>
+        <sys_updated_by>shubham.ayush@coforge.com</sys_updated_by>
+        <sys_updated_on>2024-04-25 10:17:57</sys_updated_on>
+        <timeline_page/>
+        <title>Refinitiv PermID Data</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</application>
+        <file_path/>
+        <instance_id>b81ce159db3dd894431011f848961987</instance_id>
+        <instance_name>niittechnologiesltddemo3</instance_name>
+        <name>sys_app_module_dd66791d1bb94e1087c3db15cc4bcbee</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="BFS Security Master">ad101d501b9dca5087c3db15cc4bcbe0</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Refinitiv PermID Data</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_niit3_bfs_secu_0_refinitiv_permid_data</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_niit3_bfs_secu_0.refinitiv_permid_data_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>shubham.ayush@coforge.com</sys_created_by><sys_created_on>2024-04-25 10:07:15</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dd66791d1bb94e1087c3db15cc4bcbee</sys_id><sys_mod_count>1</sys_mod_count><sys_name>Refinitiv PermID Data</sys_name><sys_overrides/><sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package><sys_policy/><sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope><sys_update_name>sys_app_module_dd66791d1bb94e1087c3db15cc4bcbee</sys_update_name><sys_updated_by>shubham.ayush@coforge.com</sys_updated_by><sys_updated_on>2024-04-25 10:17:57</sys_updated_on><timeline_page/><title>Refinitiv PermID Data</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-1720204540</payload_hash>
+        <record_name>Refinitiv PermID Data</record_name>
+        <reverted_from/>
+        <source>7d1a20d81bd9ca5087c3db15cc4bcb63</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>shubham.ayush@coforge.com</sys_created_by>
+        <sys_created_on>2024-04-25 10:17:57</sys_created_on>
+        <sys_id>0ed839dd1bb94e1087c3db15cc4bcb32</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f14c309050000001</sys_recorded_at>
+        <sys_updated_by>shubham.ayush@coforge.com</sys_updated_by>
+        <sys_updated_on>2024-04-25 10:17:57</sys_updated_on>
+        <type>Module</type>
+        <update_guid>82d839dd45b94e10b0e8c63967402232</update_guid>
+        <update_guid_history>82d839dd45b94e10b0e8c63967402232:-1720204540,5966791d9cb94e10de77a6f1e397fff1:-1795874194</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Refinitiv PermID Data">799915cb1b39065087c3db15cc4bcb24</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-30 18:30:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>11d4ef9488f24ec2824b206c8292e544</sys_id>
+        <sys_metadata>dd66791d1bb94e1087c3db15cc4bcbee</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Refinitiv PermID Data</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_scope_delete display_value="">3f5c18545ffd47b79461537f6ae474c1</sys_scope_delete>
+        <sys_update_name>sys_app_module_dd66791d1bb94e1087c3db15cc4bcbee</sys_update_name>
+        <sys_update_version display_value="sys_app_module_dd66791d1bb94e1087c3db15cc4bcbee">0ed839dd1bb94e1087c3db15cc4bcb32</sys_update_version>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-30 18:30:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

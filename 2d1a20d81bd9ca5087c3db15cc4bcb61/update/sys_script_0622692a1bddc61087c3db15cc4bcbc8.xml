@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_niit3_bfs_secu_0_cross_reference_instrument</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Create unique Identifier</name>
+        <order>50</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+	// || current.instrumenent_name.created_through == 'Manual Insert'
+	// gs.addInfoMessage('current.instrumenent_name'+current.instrumenent_name);
+	// gs.addInfoMessage('current.instrumenent_name.created_through'+current.instrumenent_name.created_through);
+	// gs.addInfoMessage('current.instrumenent_name.import_reference_no'+current.instrumenent_name.import_reference_no);
+    if (current.instrumenent_name.import_reference_no != '' || current.instrumenent_name.created_through == 'Manual Insert' && current.instrumenent_name.figi_id == '' && current.instrumenent_name.perm_id == '' || current.instrumenent_name.created_through == 'FINRA CAT' && current.instrumenent_name.figi_id == '' && current.instrumenent_name.perm_id == '') {
+		// gs.addInfoMessage('refff no is here');
+        var no = current.number;
+        //identifier = no.slice(3);
+        current.identifier = no;
+    }
+// 	(function executeRule(current, previous /*null when async*/ ) {
+
+//     var createdThrough = current.instrument.created_through;
+//     current.setValue('identifier', current.getValue('number'));
+//     current.update();
+//     if (createdThrough != "Manual Insert") {
+//         gs.eventQueue('x_nnipb_data_manag.securities.setup.uiif', current, current.inscode, createdThrough);
+//     }
+// })(current, previous);
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-04 09:21:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0622692a1bddc61087c3db15cc4bcbc8</sys_id>
+        <sys_mod_count>30</sys_mod_count>
+        <sys_name>Create unique Identifier</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_0622692a1bddc61087c3db15cc4bcbc8</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-05-02 10:21:43</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=0622692a1bddc61087c3db15cc4bcbc8"/>
+</record_update>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ff7770181b1dca5087c3db15cc4bcba2" label="Cross Reference Codification" max_length="40" name="x_niit3_bfs_secu_0_cross_reference_codification" type="collection">
+        <element label="CODIF" max_length="40" name="codifcc" type="decimal"/>
+        <element display="true" label="Short Name" max_length="40" name="short_name" type="string"/>
+        <element label="System Name" max_length="40" name="system_name" type="string"/>
+    </element>
+</database>

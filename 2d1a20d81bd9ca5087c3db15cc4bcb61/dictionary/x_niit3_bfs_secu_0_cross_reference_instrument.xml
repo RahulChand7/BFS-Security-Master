@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="18eec9101b9dca5087c3db15cc4bcb49" label="Cross Reference Instrument Synonyms" max_length="40" name="x_niit3_bfs_secu_0_cross_reference_instrument" type="collection">
+        <element attributes="ref_auto_completer=AJAXTableCompleter,&#13;&#10;ref_ac_columns=short_name,ref_ac_columns_search=true" dependent="codif" dependent_on_field="codif" label="CODEIF" mandatory="true" max_length="32" name="codeif" reference="x_niit3_bfs_secu_0_cross_reference_codification" type="reference" use_dependent_field="true"/>
+        <element label="CODIF" max_length="40" name="codif" type="integer"/>
+        <element label="Composite FIGI" max_length="40" name="composite_figi" type="string"/>
+        <element label="Deleted" max_length="40" name="deleted" read_only="true" type="boolean"/>
+        <element label="Duplicate Flag" max_length="40" name="duplicate_flag" type="boolean"/>
+        <element label="FIGI" max_length="40" name="figi" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Identifier" mandatory="true" max_length="40" name="identifier" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Import Reference No" max_length="40" name="import_reference_no" type="string"/>
+        <element attributes="encode_utf8=false,&#13;&#10;ref_auto_completer=AJAXTableCompleter,&#13;&#10;ref_ac_columns=instrument_name,ref_ac_columns_search=true" label="Instrument Name" max_length="32" name="instrumenent_name" reference="x_niit3_bfs_secu_0_bfs_security_master" reference_floats="true" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:getNextObjNumberPadded();" dynamic_default_value="fdcb83a85f220100a9ad2572f2b4773c" label="Number" max_length="40" name="number" read_only="true" type="string" use_dynamic_default="true"/>
+        <element label="REFF Code" max_length="40" name="reff_code" read_only="true" type="string"/>
+        <element label="Share Class FIGI" max_length="40" name="share_class_figi" type="string"/>
+        <element label="SNOW Created Synonym" max_length="40" name="snow_created_synonym" read_only="true" type="boolean"/>
+        <element label="Valid" max_length="40" name="valid" type="boolean"/>
+        <index name="index">
+            <element name="codeif"/>
+        </index>
+        <index name="index2">
+            <element name="instrumenent_name"/>
+        </index>
+    </element>
+</database>

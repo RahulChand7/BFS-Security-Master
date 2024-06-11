@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_niit3_bfs_secu_0.BFSRefinitive</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BFSRefinitive</name>
+        <script><![CDATA[var BFSRefinitive = Class.create();
+BFSRefinitive.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getPermId: function(ticker, micCode) {
+        try {
+            gs.info('abcde in script include ticker :' + ticker + 'micCode is: ' + micCode);
+            var r = new sn_ws.RESTMessageV2('x_niit3_bfs_secu_0.Refinitive PERM', 'GetPermId');
+            r.setStringParameterNoEscape('ticker', ticker);
+            r.setStringParameterNoEscape('micCode', micCode);
+            var response = r.execute();
+            var responseBody = response.getBody();
+            var httpStatus = response.getStatusCode();
+
+            parsedAns = JSON.parse(responseBody);
+
+            if (httpStatus == 200) {
+                var permData = parsedAns.outputContentResponse[0];
+                permurl = permData['Match OpenPermID'];
+
+				//fetch the organization data with the perm url
+                var p = new sn_ws.RESTMessageV2('x_niit3_bfs_secu_0.Refinitive PERM', 'fetchOrganizationInfo');
+                p.setStringParameterNoEscape('url', permurl);
+				var responseOrz = p.execute();
+				var responseBodyOrz = responseOrz.getBody();
+				var httpStatusOrz = responseOrz.getStatusCode();
+                action.setRedirectURL(current);
+            }
+
+            return [httpStatusOrz, responseBodyOrz];
+        } catch (ex) {
+            var message = ex.message;
+        }
+    },
+    type: 'BFSRefinitive'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-26 10:00:17</sys_created_on>
+        <sys_id>39dd76251bfd8e1087c3db15cc4bcb02</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>BFSRefinitive</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_39dd76251bfd8e1087c3db15cc4bcb02</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-28 13:24:52</sys_updated_on>
+    </sys_script_include>
+</record_update>

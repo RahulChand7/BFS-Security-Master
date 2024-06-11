@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_niit3_bfs_secu_0_bfs_security_master</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Creating UII synonym</name>
+        <order>200</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+var codfbrk = getCodeIfUIISysId();
+gs.info('instrument refno : ' + current.reff_code);
+
+var synonym = new GlideRecord('x_niit3_bfs_secu_0_cross_reference_instrument');
+synonym.initialize();
+synonym.instrumenent_name = current.sys_id;
+//synonym.setValue(instrument_name,current.sys_id,current.instrument_name);
+synonym.reff_code = current.reff_code;
+synonym.codif = '24';
+
+synonym.codeif = codfbrk;
+synonym.valid = 'true';
+synonym.duplicate_flag = 'false';
+synonym.snow_created_synonym = 'true';
+synonym.insert();
+
+function getCodeIfUIISysId() {
+    var codf = new GlideRecord('x_niit3_bfs_secu_0_cross_reference_codification');
+    codf.addEncodedQuery('short_name=UII');
+    codf.setLimit(1);
+    codf.query();
+    if (codf.next()) {
+        return codf.sys_id;
+    }
+}
+
+
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-02 04:26:42</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4a8b06f51b95061087c3db15cc4bcb14</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>Creating UII synonym</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_4a8b06f51b95061087c3db15cc4bcb14</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-14 13:41:26</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=4a8b06f51b95061087c3db15cc4bcb14"/>
+</record_update>

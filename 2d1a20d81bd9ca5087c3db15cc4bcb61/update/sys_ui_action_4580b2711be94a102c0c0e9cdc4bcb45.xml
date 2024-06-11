@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>!current.isNewRecord() &amp;&amp; current.state == 0 &amp;&amp; current.template != gs.getProperty('x_nnipb_data_manag.data_management.template.synonyms_update')</condition>
+        <form_action>false</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>true</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Test Parent Upload</name>
+        <onclick>nnipCrsBulk()</onclick>
+        <order>100</order>
+        <script><![CDATA[function nnipCrsBulk() {
+    //instantiate new progress viewer
+    var progressViewerDlg = new GlideDialogWindow('hierarchical_progress_viewer');
+    //define the AJAX script include to call
+    progressViewerDlg.setPreference('sysparm_ajax_processor', 'x_niit3_bfs_secu_0.uploadRunner');
+	//progressViewerDlg.setPreference('sysparm_name','importData');
+    progressViewerDlg.setPreference('sysparm_id', g_form.getUniqueValue());
+    progressViewerDlg.setPreference('sysparm_table', g_form.getTableName());
+    progressViewerDlg.setPreference('sysparm_template', g_form.getValue('template'));
+    //give the window a title
+    progressViewerDlg.setTitle("Upload Progress");
+
+    progressViewerDlg.on("executionComplete", function(trackerObj) {
+        //optional callback on completion
+        //see what's in trackerObj
+
+        //use some data we passed back from the worker
+        //from 'this.tracker.updateResult({incidentsCreated: totalIncidents});'
+        //         alert("All done creating " + trackerObj.result.incidentsCreated + " incidents");
+        //close the viewer
+        if (trackerObj.state == "2") {
+            progressViewerDlg.destroy();
+            g_form.save();
+        } else {
+            return;
+        }
+    });
+
+    //render the viewer
+    progressViewerDlg.render();
+}
+
+//Code that runs without 'onclick'
+//Ensure call to server-side function with no browser errors
+if (typeof window == 'undefined')
+    nnipCRSResolve();
+
+function nnipCRSResolve() {
+    action.setRedirectURL(current);
+    current.setValue('state', 1);
+    current.update();
+}
+]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-15 05:42:15</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4580b2711be94a102c0c0e9cdc4bcb45</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Test Parent Upload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_ui_action_4580b2711be94a102c0c0e9cdc4bcb45</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-18 06:56:24</sys_updated_on>
+        <table>x_niit3_bfs_secu_0_crs_bulk_imports</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>true</ui16_compatible>
+    </sys_ui_action>
+</record_update>

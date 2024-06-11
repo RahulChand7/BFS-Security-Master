@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_instrument_name" label="Instrument Name" language="en" table="x_niit3_bfs_secu_0_data_upload_for_bfs_synonym">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_instrument_name</element>
+            <help/>
+            <hint/>
+            <label>Instrument Name</label>
+            <language>en</language>
+            <name>x_niit3_bfs_secu_0_data_upload_for_bfs_synonym</name>
+            <plural>Instrument Names</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-14 11:26:54</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Instrument Name</sys_name>
+            <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+            <sys_update_name>sys_documentation_x_niit3_bfs_secu_0_data_upload_for_bfs_synonym_u_instrument_name_en</sys_update_name>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-14 11:26:54</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

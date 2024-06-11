@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Populate Refcode</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+	var number = g_form.getValue('number');
+    var uniqueNo = number.slice(6);
+    var createdThrough = g_form.getValue('created_through');
+    if (createdThrough == 'Manual Insert') {
+        g_form.setValue('reff_code','SNOW_'+uniqueNo);
+    }
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-04 05:14:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>9df868e61bd9c61087c3db15cc4bcb49</sys_id>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_name>Populate Refcode</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_client_9df868e61bd9c61087c3db15cc4bcb49</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-14 15:28:09</sys_updated_on>
+        <table>x_niit3_bfs_secu_0_bfs_security_master</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

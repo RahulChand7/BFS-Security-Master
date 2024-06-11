@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="8ae2ca161bb9425087c3db15cc4bcbec" sys_domain="global" table="x_niit3_bfs_secu_0_bfs_security_master" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-28 13:35:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>96e2ca161bb9425087c3db15cc4bcbf1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_niit3_bfs_secu_0_bfs_security_master" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">8ae2ca161bb9425087c3db15cc4bcbec</sys_ui_form>
+            <sys_ui_section caption="Instrument Details" display_value="Instrument Details" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">5aa706e01b154e5087c3db15cc4bcbde</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-28 13:35:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-28 13:35:51</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>16e2ca161bb9425087c3db15cc4bcbf2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_niit3_bfs_secu_0_bfs_security_master" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">8ae2ca161bb9425087c3db15cc4bcbec</sys_ui_form>
+            <sys_ui_section caption="Organization Details" display_value="Organization Details" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">0ee2ca161bb9425087c3db15cc4bcbea</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-28 13:35:51</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_niit3_bfs_secu_0_bfs_security_master</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-28 13:35:50</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8ae2ca161bb9425087c3db15cc4bcbec</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_niit3_bfs_secu_0_bfs_security_master</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+            <sys_update_name>sys_ui_form_sections_8ae2ca161bb9425087c3db15cc4bcbec</sys_update_name>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-28 13:35:50</sys_updated_on>
+            <sys_user/>
+            <view display_value="Instrument" name="Instrument">8aa706e01b154e5087c3db15cc4bcb69</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

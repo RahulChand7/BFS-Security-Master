@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_niit3_bfs_secu_0.crsBulkImportUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>crsBulkImportUtil</name>
+        <script><![CDATA[var crsBulkImportUtil = Class.create();
+crsBulkImportUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    initialize: function() {
+        //get the tracker so we can send progress updates
+        this.tracker = GlideExecutionTracker.getLastRunning();
+    },
+
+    importData: function(recSysId, recTable, templateId) {
+	// importData: function() {
+		// var recSysId = this.getParameter('sysparm_id');
+		// var recTable = this.getParameter('sysparm_table');
+		// var templateId = this.getParameter('sysparm_template');
+		gs.info('xyzz inside importdata');
+		gs.info('xyzz in crsBulkUpload recSysId is : '+recSysId+'recTable is: '+recTable+'templateIdis : '+templateId);
+        var ans = '';
+        var resultHtml = "";
+        var epdArray = [];
+        var importArray = [];
+        var calendarArray = [];
+        var field = 0;
+        var result;
+        var upiString = "";
+
+        var bulkMatrixGr = new GlideRecord("x_niit3_bfs_secu_0_bulk_import_matrixes");
+        if (bulkMatrixGr.get(templateId)) {
+			gs.info('xyzz got the template Id');
+            var dSource = new GlideRecord('sys_data_source');
+            if (dSource.get(bulkMatrixGr.data_source_parent)) { //parent data source field name
+				gs.info('xyzz got the data source that is defined');
+                this.tracker.incrementPercentComplete(1);
+                var counter = 0;
+
+                var newAtt = new GlideRecord('sys_attachment');
+                newAtt.addQuery('table_name', recTable);
+                newAtt.addQuery('table_sys_id', recSysId);
+                newAtt.setLimit(1);
+                newAtt.query();
+
+                var attachmentCount = newAtt.getRowCount();
+
+                if (newAtt.hasNext()) {
+                    while (newAtt.next()) {
+						
+                        // (newAtt, oldTableId, newTableName)gs.info('xyzz got the record in attachment');
+                        new global.uploadGlobalUtil().removeAttachment(bulkMatrixGr.data_source_parent);
+                        new global.uploadGlobalUtil().copyAttachment(newAtt, bulkMatrixGr.data_source_parent, 'sys_data_source');
+                        result = new global.uploadGlobalUtil().importDataCrsBulk(dSource);
+						gs.info('xyzz gott the attachment and attachment count is :'+attachmentCount);
+						gs.info('xyzz result is :'+result);
+                        this.tracker.incrementPercentComplete(100 / attachmentCount * counter);
+                        counter++;
+                    }
+                } else {
+                    this.tracker.fail("No upload file available");
+                    return;
+                }
+				gs.info('counter='+counter+' attachmentCount'+attachmentCount);
+                if (counter == attachmentCount) {
+					gs.info('xyzz counter is equal attachment count');
+                    var importSetRowsGr = new GlideRecord("sys_import_set_row");
+                    importSetRowsGr.addEncodedQuery("sys_import_set=" + result.import_set);
+                    importSetRowsGr.query();
+                    while (importSetRowsGr.next()) {
+
+                        var epdGr = new GlideRecord(importSetRowsGr.sys_target_table);
+                        //gs.info('Rakesh Test 1237');
+                        if (epdGr.get(importSetRowsGr.sys_target_sys_id)) {
+
+                            //                             if (importSetRowsGr.sys_target_table == "x_nnipb_epd_subfund") {
+                            //                                 upiString = "subfund_upi";
+                            //                             } else {
+                            //                                 upiString = "upi";
+                            //                             }
+                            importArray.push({
+                                comment: importSetRowsGr.sys_import_state_comment.toString(),
+                                state: importSetRowsGr.sys_import_state.toString(),
+                                error: importSetRowsGr.sys_row_error.error_message.toString(),
+                                instrument_name: epdGr.getValue('instrument_name'),
+                                //epdGr.getValue(upiString)
+                            });
+
+                        }
+
+                    }
+
+                    // EPD check summary
+                    resultHtml += "<p>Import result</p><table border='1'><tr bgcolor='#d3d3d3' align='center' valign='middle'><th>Instrument Name</th><th>State</th><th>Comment</th><th>Error</th></tr>";
+                    for (field = 0; field < importArray.length; field++) {
+                        resultHtml += "<tr><td>" + importArray[field].instrument_name + "</td><td>" + importArray[field].state + "</td><td>" + importArray[field].comment + "</td><td>" + importArray[field].error + "</td></tr>";
+                    }
+                    resultHtml += "</table>";
+
+                    var bulkTask = new GlideRecord('x_niit3_bfs_secu_0_crs_bulk_imports');
+                    if (bulkTask.get(recSysId)) {
+                        bulkTask.state = "2";
+						bulkTask.parent_upload = "Created";
+                        bulkTask.import_result_parent = resultHtml;
+                        bulkTask.update();
+                    }
+
+
+
+                }
+                this.tracker.success("Import completed");
+            } else {
+                // data source not found
+            }
+
+        } else {
+            // bulk matrix not found
+        }
+
+    },
+    importBulkData: function(recSysId, recTable, templateId) {
+
+        var field = 0;
+        var result = '';
+        var processed = false;
+        var dataSourceSysId = '';
+        var uniqueField = '';
+        var importArray = [];
+  var importArrayLength = 0;
+        var dSource = '';
+        var bulkMatrixGr = new GlideRecord("x_nnipb_data_manag_exceptions_bulk_import_matrixes");
+        if (!(bulkMatrixGr.get(templateId))) {
+            return;
+        }
+        if (bulkMatrixGr.data_source_parent) {
+            dataSourceSysId = bulkMatrixGr.data_source_parent;
+            uniqueField = bulkMatrixGr.unique_field;
+            dSource = bulkMatrixGr.data_source_parent.getRefRecord();
+        } else {
+            this.tracker.fail("No Data source available");
+            return;
+        }
+
+        this.tracker.incrementPercentComplete(1);
+        var newAtt = new GlideRecord('sys_attachment');
+        newAtt.addQuery('table_name', recTable);
+        newAtt.addQuery('table_sys_id', recSysId);
+        newAtt.setLimit(1);
+        newAtt.query();
+        if (newAtt.next() && dSource.isValidRecord()) {
+			
+            new global.uploadGlobalUtil().removeAttachment(dataSourceSysId);
+            new global.uploadGlobalUtil().copyAttachment(newAtt, bulkMatrixGr.data_source_parent, 'sys_data_source');
+            result = new global.uploadGlobalUtil().importDataCrsBulk(dSource);
+            this.tracker.incrementPercentComplete(100);
+            processed = true;
+        } else {
+            this.tracker.fail("No upload file available");
+            return;
+        }
+        if (processed) {
+            importArray = this._printResultOnForm(result.import_set, uniqueField);
+            var table = new global.notificationTableGenerator();
+            table.addHeader('Number,State,Comment,Error');
+   importArrayLength = importArray.length;
+            for (field = 0; field < importArrayLength; field++) {
+                table.addColumns([importArray[field].number, importArray[field].state, importArray[field].comment, importArray[field].error]);
+            }
+            table.setFullWidth();
+            this._updateBulkUploadForm(recSysId, table);
+        } else {
+            this.tracker.success("Import Failed");
+            return;
+        }
+        this.tracker.success("Import completed");
+    },
+    _printResultOnForm: function(importSet, uniqueField) {
+        var importRowArray = [];
+        var uniqueNumber = '';
+        var uniqueFld = uniqueField.toString().split('.');
+        var importSetRowsGr = new GlideRecord("sys_import_set_row");
+        importSetRowsGr.addEncodedQuery("sys_import_set=" + importSet);
+        importSetRowsGr.query();
+        while (importSetRowsGr.next()) {
+            var comment = importSetRowsGr.sys_import_state_comment.toString();
+            if (uniqueFld.length > 1) {
+                uniqueNumber = importSetRowsGr.sys_target_sys_id[uniqueFld[0]] ? importSetRowsGr.sys_target_sys_id[uniqueFld[0]][uniqueFld[1]] : comment.split(':')[0] ;
+            } else {
+                uniqueNumber = importSetRowsGr.sys_target_sys_id[uniqueField] ? importSetRowsGr.sys_target_sys_id[uniqueField] : comment.split(':')[0];
+            }
+            importRowArray.push({
+                comment: comment.split(';')[0],
+                state: importSetRowsGr.sys_import_state.toString(),
+                error: importSetRowsGr.sys_row_error.error_message.toString(),
+                number: uniqueNumber,
+            });
+        }
+        return importRowArray;
+    },
+    _updateBulkUploadForm: function(recSysId, table) {
+        var bulkTask = new GlideRecord('x_nnipb_data_manag_exceptions_bulk_imports');
+        if (bulkTask.get(recSysId)) {
+            bulkTask.state = "2";
+            bulkTask.import_result = table.generateHTML();
+            bulkTask.update();
+        }
+    },
+    type: 'crsBulkImportUtil'
+});
+]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-15 18:01:39</sys_created_on>
+        <sys_id>48908c1a1b25421087c3db15cc4bcb55</sys_id>
+        <sys_mod_count>35</sys_mod_count>
+        <sys_name>crsBulkImportUtil</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_48908c1a1b25421087c3db15cc4bcb55</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-19 05:44:02</sys_updated_on>
+    </sys_script_include>
+</record_update>

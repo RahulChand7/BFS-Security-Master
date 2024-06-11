@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="62563cb81b21825087c3db15cc4bcb0f" label="CRS Bulk imports" max_length="40" name="x_niit3_bfs_secu_0_crs_bulk_imports" type="collection">
+        <element attributes="timeFromCreateToActivate=4000" label="Import result for parent upload" max_length="65536" name="import_result_parent" read_only="true" type="html"/>
+        <element attributes="timeFromCreateToActivate=4000" label="Import result for synonym upload" max_length="65536" name="import_result_synonym" read_only="true" type="html"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="New" label="State for parent upload" max_length="40" name="parent_upload" read_only="true" type="string"/>
+        <element default="0" label="state" max_length="40" name="state" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="New" label="State for synonym upload" max_length="40" name="synonym_upload" read_only="true" type="string"/>
+        <element attributes="encode_utf8=false" label="Template" max_length="32" name="template" reference="x_niit3_bfs_secu_0_bulk_import_matrixes" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" default="Not Created" dependent="import_result_parent" dependent_on_field="import_result_parent" label="UII Creation" max_length="40" name="uii_creation" read_only="true" type="string" use_dependent_field="true"/>
+        <index name="index">
+            <element name="template"/>
+        </index>
+    </element>
+</database>
