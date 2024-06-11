@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f20becd81bd9ca5087c3db15cc4bcb60" extends="sn_bom_case" label="BFS security master" max_length="40" name="x_niit3_bfs_secu_0_bfs_security_master" type="collection">
+        <element attributes="edge_encryption_enabled=true" default="Manual Insert" label="Created Through" max_length="40" name="created_through" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="CURR" max_length="40" name="curr" type="string"/>
+        <element label="Deleted" max_length="40" name="deleted" read_only="true" type="boolean"/>
+        <element label="Exchange Code" max_length="32" name="exchange_code" reference="x_niit3_bfs_secu_0_exchange_code" type="reference"/>
+        <element dependent="exchange_code" dependent_on_field="exchange_code" label="FIGI ID" max_length="40" name="figi_id" read_only="true" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="Import Reference No" max_length="40" name="import_reference_no" type="string"/>
+        <element display="true" label="Instrument Name" max_length="40" name="instrument_name" type="string"/>
+        <element label="Market Sector" max_length="40" name="market_sector" read_only="true" type="string"/>
+        <element dependent="exchange_code" dependent_on_field="exchange_code" label="Perm ID" max_length="40" name="perm_id" read_only="true" type="string" use_dependent_field="true"/>
+        <element label="REFF Code" max_length="40" name="reff_code" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Routing Destination" max_length="40" name="routing_destination" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="ROW ID" max_length="40" name="row_id" read_only="true" type="string"/>
+        <element label="Security Description" max_length="40" name="security_description" read_only="true" type="string"/>
+        <element label="Security Type" max_length="40" name="security_type" read_only="true" type="string"/>
+        <element label="test" max_length="40" name="test" type="string"/>
+        <element label="Ticker" max_length="40" name="ticker" type="string"/>
+        <element default="18" label="Type CODIF" max_length="40" name="type_codif" read_only="true" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" dependent="perm_id" dependent_on_field="perm_id" label="LEI" max_length="40" name="u_string_1" read_only="true" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="perm_id" dependent_on_field="perm_id" label="Address" max_length="40" name="u_string_2" read_only="true" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="perm_id" dependent_on_field="perm_id" label="IPO" max_length="40" name="u_string_3" read_only="true" type="string" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" dependent="perm_id" dependent_on_field="perm_id" label="Phone" max_length="40" name="u_string_4" read_only="true" type="string" use_dependent_field="true"/>
+        <element default="true" label="Vaild" max_length="40" name="valid" read_only="true" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true" dependent="perm_id" dependent_on_field="perm_id" label="Website" max_length="40" name="website" read_only="true" type="string" use_dependent_field="true"/>
+    </element>
+</database>

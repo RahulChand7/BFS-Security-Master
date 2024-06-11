@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_niit3_bfs_secu_0.BFS_master</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BFS_master</name>
+        <script><![CDATA[var BFS_master = Class.create();
+BFS_master.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getInstanceName: function() {
+        var instance_name = gs.getProperty('instance_name');
+        return instance_name;
+    },
+    deleteMarkedInstrument: function() {
+        var sysId = this.getParameter('sysparm_obj_id');
+        var instrument = new GlideRecord('x_niit3_bfs_secu_0_bfs_security_master');
+        if (instrument.get(sysId)) {
+            instrument.deleted = true;
+            if (instrument.update()) {
+                var synonym = new GlideRecord('x_niit3_bfs_secu_0_cross_reference_instrument');
+                synonym.addQuery('instrumenent_name', sysId);
+                synonym.query();
+                while (synonym.next()) {
+                    synonym.deleted = true;
+					synonym.update();
+                }
+                return true;
+            }
+        }
+    },
+    type: 'BFS_master'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-03 07:00:51</sys_created_on>
+        <sys_id>61a7f38a1b95861087c3db15cc4bcb83</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>BFS_master</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_61a7f38a1b95861087c3db15cc4bcb83</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-07 16:05:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="acc538511b11821087c3db15cc4bcb58" extends="sys_import_set_row" label="Codification Bulk Upload" max_length="40" name="x_niit3_bfs_secu_0_codification_bulk_upload" type="collection">
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=C" label="C" max_length="40" name="u_c" type="string"/>
+        <element attributes="import_attribute_name=CODIF" label="CODIF" max_length="40" name="u_codif" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Short Name" label="Short Name" max_length="40" name="u_short_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=System Name" label="System Name" max_length="41" name="u_system_name" type="string"/>
+    </element>
+</database>

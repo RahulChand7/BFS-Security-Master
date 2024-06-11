@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="INSERT_OR_UPDATE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_niit3_bfs_secu_0_bfs_security_master</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Abot duplicate instrument</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+
+    var ins = current.getDisplayValue('instrument_name');
+    var figiId = current.getValue('figi_id');
+    var ident = current.getValue('identifier');
+	var ticker = current.getValue('ticker');
+	var exchangeCode = current.getValue('exchange_code');
+    var dupSynmGenCheck = '';
+    gs.info('abcde instrument_name is: ' + ins + 'figiId is : ' + figiId);
+
+    dupSynmGenCheck = new GlideRecord('x_niit3_bfs_secu_0_bfs_security_master');
+	if (current.created_through == 'FINRA CAT') {
+        gs.info('abcde Inside Finra cat');
+        dupSynmGenCheck.addEncodedQuery('ticker=' + ticker + '^exchange_code=' + exchangeCode + '^deleted=false');
+        dupSynmGenCheck.setLimit(1);
+        dupSynmGenCheck.query();
+        if (dupSynmGenCheck.next()) {
+            current.setAbortAction(true);
+            gs.addErrorMessage('Instrument already exists with the entered ticker and mic Code for the current Instrument.');
+            return;
+        }
+	}
+    if (current.created_through == 'Bloomberg') {
+        gs.info('abcde Inside bloomberg');
+        dupSynmGenCheck.addEncodedQuery('instrument_name=' + ins + '^figi_id=' + figiId + '^deleted=false');
+        dupSynmGenCheck.setLimit(1);
+        dupSynmGenCheck.query();
+        if (dupSynmGenCheck.next()) {
+            current.setAbortAction(true);
+            gs.addErrorMessage('Instrument already exists with the entered ticker and mic Code for the current Instrument.');
+            return;
+        }
+    } else {
+        gs.info('abcde Inside not bloomberg');
+        dupSynmGenCheck.addEncodedQuery('instrument_name=' + ins + '^deleted=false');
+        dupSynmGenCheck.setLimit(1);
+        dupSynmGenCheck.query();
+        if (dupSynmGenCheck.next()) {
+            current.setAbortAction(true);
+			gs.info('abcde aborted');
+            gs.addErrorMessage('Instrument already exists with the entered instrument_name for the current Instrument.');
+            return;
+        }
+    }
+
+
+})(current, previous);]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-26 05:40:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>d36146e11bf98e1087c3db15cc4bcb9e</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Abot duplicate instrument</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_d36146e11bf98e1087c3db15cc4bcb9e</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-05-01 10:53:42</sys_updated_on>
+        <template/>
+        <when>before</when>
+    </sys_script>
+    <sys_translated_text action="delete_multiple" query="documentkey=d36146e11bf98e1087c3db15cc4bcb9e"/>
+</record_update>

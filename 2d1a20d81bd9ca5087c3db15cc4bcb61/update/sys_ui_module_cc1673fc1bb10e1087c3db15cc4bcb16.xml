@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="BFS Security Master">081673fc1bb10e1087c3db15cc4bcb13</application>
+        <filter/>
+        <name>Exchange Codes</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_niit3_bfs_secu_0.exchange_code_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-24 06:08:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cc1673fc1bb10e1087c3db15cc4bcb16</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Exchange Codes</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_ui_module_cc1673fc1bb10e1087c3db15cc4bcb16</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-24 06:08:04</sys_updated_on>
+        <table>x_niit3_bfs_secu_0_exchange_code</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

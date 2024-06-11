@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="System Import Sets">import_sets</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Data Upload in BFS Instrument</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_niit3_bfs_secu_0_data_upload_in_bfs_instrument</name>
+        <order>1100</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles/>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-14 08:36:12</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1418fc391b21865087c3db15cc4bcb2e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Data Upload in BFS Instrument</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_app_module_1418fc391b21865087c3db15cc4bcb2e</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-14 08:36:12</sys_updated_on>
+        <timeline_page/>
+        <title>Data Upload in BFS Instrument</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

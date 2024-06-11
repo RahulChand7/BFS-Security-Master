@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="DELETE">
+        <active>true</active>
+        <application display_value="Market Sector">e687bb301bf10e1087c3db15cc4bcbf6</application>
+        <assessment/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Market Sectors</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_niit3_bfs_secu_0_market_sector</name>
+        <order/>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>x_niit3_bfs_secu_0.market_sector_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-24 06:14:31</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>aa87fb301bf10e1087c3db15cc4bcb13</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Market Sectors</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_app_module_aa87fb301bf10e1087c3db15cc4bcb13</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-24 06:14:31</sys_updated_on>
+        <timeline_page/>
+        <title>Market Sectors</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</application>
+        <file_path/>
+        <instance_id>b81ce159db3dd894431011f848961987</instance_id>
+        <instance_name>niittechnologiesltddemo3</instance_name>
+        <name>sys_app_module_aa87fb301bf10e1087c3db15cc4bcb13</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_module"><sys_app_module action="INSERT_OR_UPDATE"><active>true</active><application display_value="Market Sector">e687bb301bf10e1087c3db15cc4bcbf6</application><assessment/><device_type/><filter/><hint/><homepage/><image/><link_type>LIST</link_type><map_page/><mobile_title>Market Sectors</mobile_title><mobile_view_name>Mobile</mobile_view_name><name>x_niit3_bfs_secu_0_market_sector</name><order/><override_menu_roles>false</override_menu_roles><query/><report/><roles>x_niit3_bfs_secu_0.market_sector_user</roles><sys_class_name>sys_app_module</sys_class_name><sys_created_by>rahul.chand</sys_created_by><sys_created_on>2024-04-24 06:14:31</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>aa87fb301bf10e1087c3db15cc4bcb13</sys_id><sys_mod_count>0</sys_mod_count><sys_name>Market Sectors</sys_name><sys_overrides/><sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package><sys_policy/><sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope><sys_update_name>sys_app_module_aa87fb301bf10e1087c3db15cc4bcb13</sys_update_name><sys_updated_by>rahul.chand</sys_updated_by><sys_updated_on>2024-04-24 06:14:31</sys_updated_on><timeline_page/><title>Market Sectors</title><uncancelable>false</uncancelable><view_name/><window_name/></sys_app_module></record_update>]]></payload>
+        <payload_hash>-764358148</payload_hash>
+        <record_name>Market Sectors</record_name>
+        <reverted_from/>
+        <source>febce85c1bd9ca5087c3db15cc4bcbeb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-24 06:14:31</sys_created_on>
+        <sys_id>ae87fb301bf10e1087c3db15cc4bcb15</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f0ebdcfd20000001</sys_recorded_at>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-24 06:14:31</sys_updated_on>
+        <type>Module</type>
+        <update_guid>a287fb30b2f10e1044d7c8dd7605a415</update_guid>
+        <update_guid_history>a287fb30b2f10e1044d7c8dd7605a415:-764358148</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="Market Sectors">5bf31d6e1bb5825087c3db15cc4bcb51</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-29 04:49:19</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_module">sys_app_module</sys_db_object>
+        <sys_id>040a6e0b93a740ca80d127063d73b4b9</sys_id>
+        <sys_metadata>aa87fb301bf10e1087c3db15cc4bcb13</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Market Sectors</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_scope_delete display_value="">3f5c18545ffd47b79461537f6ae474c1</sys_scope_delete>
+        <sys_update_name>sys_app_module_aa87fb301bf10e1087c3db15cc4bcb13</sys_update_name>
+        <sys_update_version display_value="sys_app_module_aa87fb301bf10e1087c3db15cc4bcb13">ae87fb301bf10e1087c3db15cc4bcb15</sys_update_version>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-29 04:49:19</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

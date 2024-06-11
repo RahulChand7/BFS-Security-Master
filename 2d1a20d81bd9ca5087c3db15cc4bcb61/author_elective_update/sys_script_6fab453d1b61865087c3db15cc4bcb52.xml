@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script">
+    <sys_script action="DELETE">
+        <abort_action>false</abort_action>
+        <access>package_private</access>
+        <action_delete>false</action_delete>
+        <action_insert>true</action_insert>
+        <action_query>false</action_query>
+        <action_update>false</action_update>
+        <active>true</active>
+        <add_message>false</add_message>
+        <advanced>true</advanced>
+        <change_fields>false</change_fields>
+        <client_callable>false</client_callable>
+        <collection>x_niit3_bfs_secu_0_bfs_security_master</collection>
+        <condition/>
+        <description/>
+        <execute_function>false</execute_function>
+        <filter_condition/>
+        <is_rest>false</is_rest>
+        <message/>
+        <name>Set ref code on bulk upload</name>
+        <order>100</order>
+        <priority>100</priority>
+        <rest_method/>
+        <rest_method_text/>
+        <rest_service/>
+        <rest_service_text/>
+        <rest_variables/>
+        <role_conditions/>
+        <script><![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    var num = "000001";
+    var finalRef_code;
+    var currSysID = current.sys_id;
+
+    var agg = new GlideAggregate('x_nnipb_data_manag_cross_reference_instrument');
+    agg.addEncodedQuery("ins_ref_codeSTARTSWITHSNOW_");
+    agg.orderByDesc('reff_code');
+    agg.query();
+    if (agg.next()) {
+
+        var rc = agg.getRowCount();
+        var gg = agg.getValue('reff_code');
+        //gs.info(rc);
+
+
+        // gs.info(gg);
+        var str = gg.substring(5); //say the field number is   SNIN0000123, so ill delete SNIN_
+
+        var newnum = parseInt(str) + 1;
+        var finaf = pad(newnum, 6);
+        current.ins_ref_code = "SNIN_" + finaf;
+        finalRef_code = "SNIN_" + finaf;
+        current.update();
+
+    } else {
+        current.ins_ref_code = "SNIN_" + num;
+        finalRef_code = "SNIN_" + num;
+       // current.import_reference_no = "";
+        current.update();
+    }
+
+
+
+
+    function pad(number, length) {
+
+        var str = '' + number;
+        while (str.length < length) {
+            str = '0' + str;
+        }
+
+        return str;
+    }
+})(current, previous);
+]]></script>
+        <sys_class_name>sys_script</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-14 10:01:53</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>6fab453d1b61865087c3db15cc4bcb52</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set ref code on bulk upload</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_6fab453d1b61865087c3db15cc4bcb52</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-14 10:01:53</sys_updated_on>
+        <template/>
+        <when>after</when>
+    </sys_script>
+    <sys_translated_text action="DELETE" query="documentkey=6fab453d1b61865087c3db15cc4bcb52"/>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</application>
+        <file_path/>
+        <instance_id>b81ce159db3dd894431011f848961987</instance_id>
+        <instance_name>niittechnologiesltddemo3</instance_name>
+        <name>sys_script_6fab453d1b61865087c3db15cc4bcb52</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="sys_script"&gt;&lt;sys_script action="INSERT_OR_UPDATE"&gt;&lt;abort_action&gt;false&lt;/abort_action&gt;&lt;access&gt;package_private&lt;/access&gt;&lt;action_delete&gt;false&lt;/action_delete&gt;&lt;action_insert&gt;true&lt;/action_insert&gt;&lt;action_query&gt;false&lt;/action_query&gt;&lt;action_update&gt;false&lt;/action_update&gt;&lt;active&gt;true&lt;/active&gt;&lt;add_message&gt;false&lt;/add_message&gt;&lt;advanced&gt;true&lt;/advanced&gt;&lt;change_fields&gt;false&lt;/change_fields&gt;&lt;client_callable&gt;false&lt;/client_callable&gt;&lt;collection&gt;x_niit3_bfs_secu_0_bfs_security_master&lt;/collection&gt;&lt;condition/&gt;&lt;description/&gt;&lt;execute_function&gt;false&lt;/execute_function&gt;&lt;filter_condition/&gt;&lt;is_rest&gt;false&lt;/is_rest&gt;&lt;message/&gt;&lt;name&gt;Set ref code on bulk upload&lt;/name&gt;&lt;order&gt;100&lt;/order&gt;&lt;priority&gt;100&lt;/priority&gt;&lt;rest_method/&gt;&lt;rest_method_text/&gt;&lt;rest_service/&gt;&lt;rest_service_text/&gt;&lt;rest_variables/&gt;&lt;role_conditions/&gt;&lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/ ) {
+
+    // Add your code here
+    var num = "000001";
+    var finalRef_code;
+    var currSysID = current.sys_id;
+
+    var agg = new GlideAggregate('x_nnipb_data_manag_cross_reference_instrument');
+    agg.addEncodedQuery("ins_ref_codeSTARTSWITHSNOW_");
+    agg.orderByDesc('reff_code');
+    agg.query();
+    if (agg.next()) {
+
+        var rc = agg.getRowCount();
+        var gg = agg.getValue('reff_code');
+        //gs.info(rc);
+
+
+        // gs.info(gg);
+        var str = gg.substring(5); //say the field number is   SNIN0000123, so ill delete SNIN_
+
+        var newnum = parseInt(str) + 1;
+        var finaf = pad(newnum, 6);
+        current.ins_ref_code = "SNIN_" + finaf;
+        finalRef_code = "SNIN_" + finaf;
+        current.update();
+
+    } else {
+        current.ins_ref_code = "SNIN_" + num;
+        finalRef_code = "SNIN_" + num;
+       // current.import_reference_no = "";
+        current.update();
+    }
+
+
+
+
+    function pad(number, length) {
+
+        var str = '' + number;
+        while (str.length &lt; length) {
+            str = '0' + str;
+        }
+
+        return str;
+    }
+})(current, previous);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;rahul.chand&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2024-04-14 10:01:53&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;6fab453d1b61865087c3db15cc4bcb52&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;Set ref code on bulk upload&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0"&gt;2d1a20d81bd9ca5087c3db15cc4bcb61&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="BFS Security Master"&gt;2d1a20d81bd9ca5087c3db15cc4bcb61&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_script_6fab453d1b61865087c3db15cc4bcb52&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;rahul.chand&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2024-04-14 10:01:53&lt;/sys_updated_on&gt;&lt;template/&gt;&lt;when&gt;after&lt;/when&gt;&lt;/sys_script&gt;&lt;sys_translated_text action="delete_multiple" query="documentkey=6fab453d1b61865087c3db15cc4bcb52"/&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1551123182</payload_hash>
+        <record_name>Set ref code on bulk upload</record_name>
+        <reverted_from/>
+        <source>febce85c1bd9ca5087c3db15cc4bcbeb</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-14 10:01:54</sys_created_on>
+        <sys_id>3fab453d1b61865087c3db15cc4bcb55</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18edc0e645e0000001</sys_recorded_at>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-14 10:01:54</sys_updated_on>
+        <type>Business Rule</type>
+        <update_guid>ffab453de261865042d26b2d4c36d854</update_guid>
+        <update_guid_history>ffab453de261865042d26b2d4c36d854:-1551123182</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-14 11:19:52</sys_created_on>
+        <sys_db_object display_value="" name="sys_script">sys_script</sys_db_object>
+        <sys_id>496c9562a6c24bef88fc62cdc0c25621</sys_id>
+        <sys_metadata>6fab453d1b61865087c3db15cc4bcb52</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Set ref code on bulk upload</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_parent display_value="BFS security master">f20becd81bd9ca5087c3db15cc4bcb60</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_scope_delete display_value="">3f5c18545ffd47b79461537f6ae474c1</sys_scope_delete>
+        <sys_update_name>sys_script_6fab453d1b61865087c3db15cc4bcb52</sys_update_name>
+        <sys_update_version display_value="sys_script_6fab453d1b61865087c3db15cc4bcb52">3fab453d1b61865087c3db15cc4bcb55</sys_update_version>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-14 11:19:52</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

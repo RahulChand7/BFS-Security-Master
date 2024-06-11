@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c3d4a4b51bed465087c3db15cc4bcbe0" label="Bulk Import Matrixes" max_length="40" name="x_niit3_bfs_secu_0_bulk_import_matrixes" type="collection">
+        <element label="Data Source for Parent Upload" mandatory="true" max_length="32" name="data_source_parent" reference="sys_data_source" type="reference"/>
+        <element label="Data Source for Synonym Upload" mandatory="true" max_length="32" name="data_source_synonym" reference="sys_data_source" type="reference"/>
+        <element label="Group" mandatory="true" max_length="32" name="group" reference="sys_user_group" type="reference"/>
+        <element label="Template Name" mandatory="true" max_length="40" name="template_name" type="string"/>
+        <index name="index">
+            <element name="data_source_parent"/>
+        </index>
+        <index name="index2">
+            <element name="data_source_synonym"/>
+        </index>
+        <index name="index3">
+            <element name="group"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="26a5bbbc1bb10e1087c3db15cc4bcbe1" label="Exchange Code" max_length="40" name="x_niit3_bfs_secu_0_exchange_code" type="collection">
+        <element label="Country" max_length="40" name="country" type="string"/>
+        <element display="true" label="Exchange Name" max_length="40" name="exchange_name" type="string"/>
+        <element label="FINRA" max_length="40" name="ex_code" type="string"/>
+        <element label="FIGI" max_length="40" name="figi" type="string"/>
+        <element label="MIC Code" max_length="40" name="mic_code" type="string"/>
+    </element>
+</database>

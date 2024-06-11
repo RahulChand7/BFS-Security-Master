@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="curr" label="CURR" language="en" table="x_niit3_bfs_secu_0_bfs_security_master">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>curr</element>
+            <help/>
+            <hint/>
+            <label>CURR</label>
+            <language>en</language>
+            <name>x_niit3_bfs_secu_0_bfs_security_master</name>
+            <plural>CURRs</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:51</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>CURR</sys_name>
+            <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+            <sys_update_name>sys_documentation_x_niit3_bfs_secu_0_bfs_security_master_curr_en</sys_update_name>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:51</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

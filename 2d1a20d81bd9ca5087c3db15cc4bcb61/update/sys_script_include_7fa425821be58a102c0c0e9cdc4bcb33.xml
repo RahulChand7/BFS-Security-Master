@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_niit3_bfs_secu_0.uploadRunner</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>uploadRunner</name>
+        <script><![CDATA[var uploadRunner = Class.create();
+uploadRunner.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    start: function() {
+        //instantiate worker
+        var worker = new GlideScriptedHierarchicalWorker();
+        //give it a name
+        worker.setProgressName("Upload Progress");
+        //run in the background so user can close progress if they get bored watching
+        worker.setBackground(true);
+        //call the script include worker and method
+		gs.info('abcdef in uploadRunner table is :'+this.getParameter('sysparm_table'));
+        worker.setScriptIncludeName('x_niit3_bfs_secu_0.crsBulkImportUtil()');
+        worker.setScriptIncludeMethod("importData");
+        worker.putMethodArg("recSysId", this.getParameter('sysparm_id'));
+        worker.putMethodArg("recTable", this.getParameter('sysparm_table'));
+        worker.putMethodArg("templateId", this.getParameter('sysparm_template'));
+        worker.start();
+		
+        //get the worker id so we can track progress from the client
+        var progressID = worker.getProgressID();
+        return progressID;
+    },
+    type: 'uploadRunner'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-15 06:31:41</sys_created_on>
+        <sys_id>7fa425821be58a102c0c0e9cdc4bcb33</sys_id>
+        <sys_mod_count>14</sys_mod_count>
+        <sys_name>uploadRunner</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_7fa425821be58a102c0c0e9cdc4bcb33</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-17 10:55:14</sys_updated_on>
+    </sys_script_include>
+</record_update>

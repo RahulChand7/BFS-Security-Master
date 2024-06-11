@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name/>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments/>
+        <condition>!current.isNewRecord()</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style>primary</form_style>
+        <format_for_configurable_workspace>false</format_for_configurable_workspace>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>true</list_action>
+        <list_banner_button>true</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style>primary</list_style>
+        <messages/>
+        <name>Get Master Data</name>
+        <onclick/>
+        <order>100</order>
+        <script><![CDATA[if (current.figi_id == '') {
+    // current.created_through = 'Bloomberg';
+    current.update();
+
+    var ticker = current.ticker;
+    var micCode = current.exchange_code.mic_code;
+    gs.info('abcde micCode is :' + micCode + ' and ticker is : ' + ticker);
+
+
+    var fetchFigi = new x_niit3_bfs_secu_0.BFSBloomberg();
+    var answer = fetchFigi.getFigiSynonym(ticker, micCode);
+    gs.info('abcde answer :' + answer);
+    parsedAns = JSON.parse(answer[1]);
+
+
+    if (answer[0] == 200) {
+        gs.info('200 fiji');
+        var figiData = parsedAns[0].data[0];
+        current.market_sector = figiData.marketSector;
+        current.security_description = figiData.securityDescription;
+        current.security_type = figiData.securityType;
+        current.instrument_name = figiData.name;
+        current.figi_id = figiData.figi;
+        current.update();
+
+        var makeFigis = new GlideRecord('x_niit3_bfs_secu_0_cross_reference_instrument');
+        makeFigis.initialize();
+        makeFigis.instrumenent_name = current.sys_id;
+        makeFigis.identifier = figiData.figi;
+        makeFigis.codeif = '52a9e5dd1b794e1087c3db15cc4bcb9d';
+        makeFigis.insert();
+
+        makeFigis.initialize();
+        makeFigis.instrumenent_name = current.sys_id;
+        makeFigis.identifier = figiData.compositeFIGI;
+        makeFigis.codeif = '75d9e5dd1b794e1087c3db15cc4bcba0';
+        makeFigis.insert();
+
+        makeFigis.initialize();
+        makeFigis.instrumenent_name = current.sys_id;
+        makeFigis.identifier = figiData.shareClassFIGI;
+        makeFigis.codeif = '53f9a9dd1b794e1087c3db15cc4bcb84';
+        makeFigis.insert();
+
+        gs.addInfoMessage('Data is fetched');
+        action.setRedirectURL(current);
+    }
+} else {
+    if (!RP.isRelatedList()) {
+        // gs.addErrorMessage('already has a figi id');
+    }
+    action.setRedirectURL(current);
+}
+
+
+if (current.perm_id == '') {
+    // current.created_through = 'Refinitive';
+    current.update();
+
+    var tickerPerm = current.ticker;
+    var micCodePerm = current.exchange_code.mic_code;
+    gs.info('abcde micCode in refinitive is :' + micCodePerm + ' and ticker is : ' + tickerPerm);
+
+    var fetchPerm = new x_niit3_bfs_secu_0.BFSRefinitive();
+    var answerPerm = fetchPerm.getPermId(tickerPerm, micCodePerm);
+    gs.info('abcde answer :' + answerPerm);
+    parsedAns = JSON.parse(answerPerm[1]);
+
+    if (answerPerm[0] == 200) {
+        var permData = parsedAns['tr-common:hasPermId'];
+        // permurl = permData['Match OpenPermID'];
+        // const parts = permurl.split("-");
+        // current.perm_id = parts[parts.length - 1];
+        current.perm_id = parsedAns['tr-common:hasPermId'];
+        current.u_string_3 = parsedAns['hasIPODate'];
+        current.u_string_2 = parsedAns['mdaas:HeadquartersAddress'];
+        current.website = parsedAns['hasURL'];
+        current.u_string_4 = parsedAns['tr-org:hasHeadquartersPhoneNumber'];
+		current.u_string_1=parsedAns['tr-org:hasLEI'];
+        current.update();
+
+		var makePerm = new GlideRecord('x_niit3_bfs_secu_0_cross_reference_instrument');
+        makePerm.initialize();
+        makePerm.instrumenent_name = current.sys_id;
+        makePerm.identifier = parsedAns['tr-common:hasPermId'];
+        makePerm.codeif = 'c22aa9dd1b794e1087c3db15cc4bcb8a';
+        makePerm.insert();
+
+        action.setRedirectURL(current);
+    }
+
+}
+// insertSynonym(figiName);]]></script>
+        <show_insert>true</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-24 18:59:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0cc4a68d1b7d0e1087c3db15cc4bcb9d</sys_id>
+        <sys_mod_count>85</sys_mod_count>
+        <sys_name>Get Master Data</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_ui_action_0cc4a68d1b7d0e1087c3db15cc4bcb9d</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-30 10:06:21</sys_updated_on>
+        <table>x_niit3_bfs_secu_0_bfs_security_master</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+</record_update>

@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="New Section" section_id="7d1925d81bddca5087c3db15cc4bcb99" sys_domain="global" table="x_niit3_bfs_secu_0_bfs_security_master" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>instrument_name</element>
+            <position>0</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb54</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>type_codif</element>
+            <position>1</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>curr</element>
+            <position>2</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ref_code</element>
+            <position>3</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>created_through</element>
+            <position>4</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb55</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>import_reference_no</element>
+            <position>6</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>valid</element>
+            <position>7</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>deleted</element>
+            <position>8</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb56</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>row_id</element>
+            <position>9</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>routing_destination</element>
+            <position>10</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>11</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.begin_split</element>
+            <position>12</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb57</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type>.begin_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>number</element>
+            <position>13</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>product</element>
+            <position>14</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact</element>
+            <position>15</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>company</element>
+            <position>16</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb58</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>asset</element>
+            <position>17</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contract</element>
+            <position>18</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>entitlement</element>
+            <position>19</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>20</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb59</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_at</element>
+            <position>21</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>opened_by</element>
+            <position>22</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_on</element>
+            <position>23</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>sys_updated_by</element>
+            <position>24</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb5a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>contact_type</element>
+            <position>25</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>priority</element>
+            <position>26</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assignment_group</element>
+            <position>27</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>assigned_to</element>
+            <position>28</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb5b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>parent</element>
+            <position>29</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e319a5d81bddca5087c3db15cc4bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.end_split</element>
+            <position>30</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>e719a5d81bddca5087c3db15cc4bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type>.end_split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>short_description</element>
+            <position>31</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>eb19a5d81bddca5087c3db15cc4bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>cxs_table_search.xml</element>
+            <position>32</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>ef19a5d81bddca5087c3db15cc4bcb5c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter display_value="Contextual Search Results">11eb1622eb1121003623666cd206fe56</sys_ui_formatter>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type>formatter</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>follow_the_sun</element>
+            <position>33</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:54</sys_created_on>
+            <sys_id>2719a5d81bddca5087c3db15cc4bcb5d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:54</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>test</element>
+            <position>34</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-04 06:47:14</sys_created_on>
+            <sys_id>be3f78221b5dc61087c3db15cc4bcb0b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-04 06:47:14</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>reff_code</element>
+            <position>35</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-04 07:05:05</sys_created_on>
+            <sys_id>d853c5a61b5dc61087c3db15cc4bcbf1</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-04 07:05:05</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>ticker</element>
+            <position>36</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-24 10:18:40</sys_created_on>
+            <sys_id>876f64891bb50e1087c3db15cc4bcb0e</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-24 10:18:40</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>exchange_code</element>
+            <position>37</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-24 10:18:41</sys_created_on>
+            <sys_id>036f64891bb50e1087c3db15cc4bcb29</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-24 10:18:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>security_type</element>
+            <position>38</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-24 10:18:41</sys_created_on>
+            <sys_id>576f64891bb50e1087c3db15cc4bcb4f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-24 10:18:41</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>market_sector</element>
+            <position>39</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-24 10:18:42</sys_created_on>
+            <sys_id>136f64891bb50e1087c3db15cc4bcb69</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-24 10:18:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>security_description</element>
+            <position>40</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-24 10:18:42</sys_created_on>
+            <sys_id>2f6f64891bb50e1087c3db15cc4bcb82</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-24 10:18:42</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>figi_id</element>
+            <position>41</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-24 10:36:32</sys_created_on>
+            <sys_id>ac83b88d1bb50e1087c3db15cc4bcbe0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-24 10:36:32</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>perm_id</element>
+            <position>42</position>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:48:17</sys_created_on>
+            <sys_id>11ab32a11bfd8e1087c3db15cc4bcb45</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="New Section" display_value="New Section" name="x_niit3_bfs_secu_0_bfs_security_master" sys_domain="global" view="Default view">7d1925d81bddca5087c3db15cc4bcb99</sys_ui_section>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:48:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>New Section</caption>
+            <header>false</header>
+            <name>x_niit3_bfs_secu_0_bfs_security_master</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-03-28 10:03:48</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7d1925d81bddca5087c3db15cc4bcb99</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_niit3_bfs_secu_0_bfs_security_master</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+            <sys_update_name>sys_ui_section_7d1925d81bddca5087c3db15cc4bcb99</sys_update_name>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-03-28 10:03:48</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="494195aa1bb5825087c3db15cc4bcb7a" label="Bulk Instrument Text Upload" max_length="40" name="x_niit3_bfs_secu_0_bulk_instrument_text_upload" type="collection">
+        <element label="Name" max_length="40" name="name" type="string"/>
+        <element choice="1" default="FINRA CAT Reference Data" label="Template" max_length="40" name="template" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="FINRA CAT Reference Data" sequence="1" value="FINRA CAT Reference Data"/>
+                <element inactive_on_update="false" label="NASDAQ Symbols Data" sequence="2" value="NASDAQ Symbols Data"/>
+            </choice>
+        </element>
+    </element>
+</database>

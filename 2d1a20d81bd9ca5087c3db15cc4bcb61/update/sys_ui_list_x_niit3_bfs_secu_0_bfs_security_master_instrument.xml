@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_list parent="" relationship="" sys_domain="global" table="x_niit3_bfs_secu_0_bfs_security_master" version="2" view="Instrument">
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>ticker</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>0</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>d2ebb6a11bfd8e1087c3db15cc4bcb1a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>instrument_name</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>1</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>daebb6a11bfd8e1087c3db15cc4bcb1a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>figi_id</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>2</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>deebb6a11bfd8e1087c3db15cc4bcb1a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>perm_id</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>3</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>d2ebb6a11bfd8e1087c3db15cc4bcb1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>reff_code</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>4</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>d6ebb6a11bfd8e1087c3db15cc4bcb1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>curr</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>5</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>daebb6a11bfd8e1087c3db15cc4bcb1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>exchange_code</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>6</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>deebb6a11bfd8e1087c3db15cc4bcb1b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>deleted</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>7</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>d2ebb6a11bfd8e1087c3db15cc4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_on</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>8</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>d6ebb6a11bfd8e1087c3db15cc4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>created_through</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>9</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>daebb6a11bfd8e1087c3db15cc4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_updated_by</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>10</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>deebb6a11bfd8e1087c3db15cc4bcb1c</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list_element action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element>sys_created_by</element>
+            <list_id display_value="x_niit3_bfs_secu_0_bfs_security_master" element="NULL" name="x_niit3_bfs_secu_0_bfs_security_master" parent="NULL" relationship="NULL" sys_domain="global" view="8aa706e01b154e5087c3db15cc4bcb69">9aebb6a11bfd8e1087c3db15cc4bcb18</list_id>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <position>11</position>
+            <sum>false</sum>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_id>d2ebb6a11bfd8e1087c3db15cc4bcb1d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+        </sys_ui_list_element>
+        <sys_ui_list action="INSERT_OR_UPDATE">
+            <average_value>false</average_value>
+            <element/>
+            <max_value>false</max_value>
+            <min_value>false</min_value>
+            <name>x_niit3_bfs_secu_0_bfs_security_master</name>
+            <parent/>
+            <position/>
+            <relationship/>
+            <sum>false</sum>
+            <sys_class_name>sys_ui_list</sys_class_name>
+            <sys_created_by>rahul.chand</sys_created_by>
+            <sys_created_on>2024-04-26 09:49:26</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>9aebb6a11bfd8e1087c3db15cc4bcb18</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_niit3_bfs_secu_0_bfs_security_master</sys_name>
+            <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+            <sys_update_name>sys_ui_list_x_niit3_bfs_secu_0_bfs_security_master_Instrument</sys_update_name>
+            <sys_updated_by>rahul.chand</sys_updated_by>
+            <sys_updated_on>2024-04-26 09:49:26</sys_updated_on>
+            <sys_user/>
+            <view display_value="Instrument" name="Instrument">8aa706e01b154e5087c3db15cc4bcb69</view>
+            <view_name/>
+        </sys_ui_list>
+    </sys_ui_list>
+</record_update>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
+    <sys_security_acl action="DELETE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <condition/>
+        <description>Default access control on x_niit3_bfs_secu_0_refinitiv_permid_data</description>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_niit3_bfs_secu_0_refinitiv_permid_data</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>shubham.ayush@coforge.com</sys_created_by>
+        <sys_created_on>2024-04-25 10:07:16</sys_created_on>
+        <sys_id>bd66b91d1bb94e1087c3db15cc4bcb29</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_niit3_bfs_secu_0_refinitiv_permid_data</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_security_acl_bd66b91d1bb94e1087c3db15cc4bcb29</sys_update_name>
+        <sys_updated_by>shubham.ayush@coforge.com</sys_updated_by>
+        <sys_updated_on>2024-04-25 10:07:16</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</application>
+        <file_path/>
+        <instance_id>b81ce159db3dd894431011f848961987</instance_id>
+        <instance_name>niittechnologiesltddemo3</instance_name>
+        <name>sys_security_acl_bd66b91d1bb94e1087c3db15cc4bcb29</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl"><sys_security_acl action="INSERT_OR_UPDATE"><active>true</active><admin_overrides>true</admin_overrides><advanced>false</advanced><condition/><description>Default access control on x_niit3_bfs_secu_0_refinitiv_permid_data</description><local_or_existing>Local</local_or_existing><name>x_niit3_bfs_secu_0_refinitiv_permid_data</name><operation display_value="delete">delete</operation><script/><security_attribute/><sys_class_name>sys_security_acl</sys_class_name><sys_created_by>shubham.ayush@coforge.com</sys_created_by><sys_created_on>2024-04-25 10:07:16</sys_created_on><sys_id>bd66b91d1bb94e1087c3db15cc4bcb29</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_niit3_bfs_secu_0_refinitiv_permid_data</sys_name><sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package><sys_policy/><sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope><sys_update_name>sys_security_acl_bd66b91d1bb94e1087c3db15cc4bcb29</sys_update_name><sys_updated_by>shubham.ayush@coforge.com</sys_updated_by><sys_updated_on>2024-04-25 10:07:16</sys_updated_on><type display_value="record">record</type></sys_security_acl></record_update>]]></payload>
+        <payload_hash>1128930755</payload_hash>
+        <record_name>x_niit3_bfs_secu_0_refinitiv_permid_data</record_name>
+        <reverted_from/>
+        <source>7d1a20d81bd9ca5087c3db15cc4bcb63</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>shubham.ayush@coforge.com</sys_created_by>
+        <sys_created_on>2024-04-25 10:07:17</sys_created_on>
+        <sys_id>b566b91d1bb94e1087c3db15cc4bcb2f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>18f14b944700000001</sys_recorded_at>
+        <sys_updated_by>shubham.ayush@coforge.com</sys_updated_by>
+        <sys_updated_on>2024-04-25 10:07:17</sys_updated_on>
+        <type>Access Control</type>
+        <update_guid>b966b91dc9b94e1035d3c255cdecb62e</update_guid>
+        <update_guid_history>b966b91dc9b94e1035d3c255cdecb62e:1128930755</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-30 18:30:45</sys_created_on>
+        <sys_db_object display_value="" name="sys_security_acl">sys_security_acl</sys_db_object>
+        <sys_id>073413c0a05444a4a3a019ba56475e90</sys_id>
+        <sys_metadata>bd66b91d1bb94e1087c3db15cc4bcb29</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_niit3_bfs_secu_0_refinitiv_permid_data</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_parent display_value="">bd66b91d1bb94e1087c3db15cc4bcb34</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_scope_delete display_value="">3f5c18545ffd47b79461537f6ae474c1</sys_scope_delete>
+        <sys_update_name>sys_security_acl_bd66b91d1bb94e1087c3db15cc4bcb29</sys_update_name>
+        <sys_update_version display_value="sys_security_acl_bd66b91d1bb94e1087c3db15cc4bcb29">b566b91d1bb94e1087c3db15cc4bcb2f</sys_update_version>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-30 18:30:45</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_niit3_bfs_secu_0.BFSBloomberg</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>BFSBloomberg</name>
+        <script><![CDATA[var BFSBloomberg = Class.create();
+BFSBloomberg.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	getFigiSynonym: function(ticker,micCode) {
+        try {
+			gs.info('in script include ticker :'+ticker+'micCode is: '+micCode);
+            var r = new sn_ws.RESTMessageV2('x_niit3_bfs_secu_0.Bloomberg FIGI', 'GetFigiData');
+            r.setStringParameterNoEscape('ticker', ticker);
+			r.setStringParameterNoEscape('micCode', micCode);
+			var response = r.execute();
+			var responseBody = response.getBody();
+			var httpStatus = response.getStatusCode();
+
+			return [httpStatus,responseBody];
+        } catch (ex) {
+            var message = ex.message;
+        }
+	},
+    type: 'BFSBloomberg'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>rahul.chand</sys_created_by>
+        <sys_created_on>2024-04-24 18:50:14</sys_created_on>
+        <sys_id>0140aa091b7d0e1087c3db15cc4bcbd0</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>BFSBloomberg</sys_name>
+        <sys_package display_value="BFS Security Master" source="x_niit3_bfs_secu_0">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="BFS Security Master">2d1a20d81bd9ca5087c3db15cc4bcb61</sys_scope>
+        <sys_update_name>sys_script_include_0140aa091b7d0e1087c3db15cc4bcbd0</sys_update_name>
+        <sys_updated_by>rahul.chand</sys_updated_by>
+        <sys_updated_on>2024-04-25 08:57:02</sys_updated_on>
+    </sys_script_include>
+</record_update>
